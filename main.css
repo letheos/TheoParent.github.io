@@ -23,19 +23,23 @@ body{
     display: flex;
     align-items: center;
     place-items: center;
-    gap: 550px;
+    gap: 20%;
     background-color: #1c253c;
     margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
 .Exppro {
     margin-bottom: 20%;
     background-color: #1c253c;
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .Formationsanddiplomes {
     margin-bottom: 20%;
     background-color: #1c253c;
+    margin-left: 5%;
 }
 
 .presentationtext {
@@ -43,7 +47,7 @@ body{
     background: linear-gradient(45deg, #A020F0, #C90055);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-left: 150px;
+    margin-left: 10%;
     animation: revealTextAnimation 0.64s ease forwards;
 }
 
@@ -76,6 +80,7 @@ body{
     height: auto;
     aspect-ratio: auto;
     border-radius: 30px;
+
 }
 
 .intro {
@@ -94,6 +99,7 @@ body{
     align-items: center;
     text-align: center;
     background-color: #1c253c;
+
 }
 
 .photo {
@@ -143,14 +149,40 @@ body{
     display: flex;
     align-items: center;
     place-items: center;
-    gap: 450px;
+    gap: 20%;
     margin-bottom: 20%;
     background-color: #1c253c;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.map-frame {
+.map-container {
+    position: relative;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.map-frame2 {
     border-radius: 15px;
     overflow: hidden;
+
+}
+.map-frame {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+}
+
+.map-container:hover {
+    width: 450px;
+    height: 450px;
+    border-radius: 15px;
+}
+
+.map-container:hover .map-frame {
+    transform: scale(1.1);
 }
 
 .maps {
@@ -161,6 +193,8 @@ body{
 
 .Coordonnées{
     margin-bottom: 10%;
+    margin-right: 10%;
+    margin-left: 5%;
 }
 
 .main {
